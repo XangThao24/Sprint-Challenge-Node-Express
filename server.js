@@ -7,6 +7,7 @@ const projectDb = require("./data/helpers/projectModel");
 const actionDb = require("./data/helpers/actionModel");
 
 app.use(express.json());
+app.use(cors());
 
 app.get("/", (req, res) => {
   res.send("Hello There");
